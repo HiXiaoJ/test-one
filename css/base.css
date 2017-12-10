@@ -1,0 +1,16 @@
+html, body, ul, li, img, a, p, div, form, input,h4{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+input{
+	outline: none;
+}
+ul{
+	list-style: none;
+}

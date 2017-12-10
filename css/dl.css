@@ -1,0 +1,69 @@
+.top{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 640px;
+	min-width: 320px;
+	background: #eee;
+	font-weight: 700;
+	color: #3b3a48;
+	font-family: '微软雅黑';
+}
+input{
+	border:none;
+	outline: none;
+	font-size: 15px;
+	width: 50%;
+}
+.fh{
+	position: relative;
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	padding: 10px 0;
+} 
+.fh i{
+	position: absolute;
+	left: 1%;
+    top: 32%;
+}
+.fh span{
+	position: absolute;
+	left: 1%;
+    top: 24%;
+    margin-left: 24px;
+}
+.sj{
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	border-bottom: 2px solid #ccc;
+       padding: 2% 0 2% 10%;
+       position: relative;
+}
+.sj-t{
+	margin-top: 0;
+}
+.yz{
+	position: absolute;
+	right: 1%;
+	font-size: 14px;
+	color: #666;
+}
+/*.bottom{
+	width: 100%;
+	position: relative; 
+	margin-top: 10px;
+}*/
+ button{
+	position: relative; 
+	margin-top: 10px;
+	width: 100%;
+	
+	font-size: 16px;
+	width: 100%;
+	 background: #ffcf49;
+	border: 0;
+	outline:none;
+	color: #fff;
+	  padding: 2% 0;
+}

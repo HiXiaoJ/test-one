@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>账号与安全</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/dl.css">
+</head>
+<body>
+	<div class="top">
+		<div class="fh">
+			<i class="iconfont">&#xe603;</i>
+			<span><a href="my.html">返回</a></span>
+			账号与安全
+		</div>
+		<div class="sj">
+			手机号: <input type="text" placeholder="您的注册手机">
+			<span class="yz">获取验证码</span>
+		</div>
+		<div class="sj sj-t">
+			验证码: <input type="text" placeholder="您手机收到的验证码">
+		</div>
+		<div class="sj sj-t">
+			新密码: <input type="text" placeholder="6-20位字母或数字">
+		</div>
+		<div class="sj sj-t">
+			重复密码: <input type="text" placeholder="6-20位字母或数字">
+		</div>
+		<button>
+			确定
+		</button>
+	</div>
+	<script>
+		window.onload = function(){
+			var num = 10;
+			var  flag = true;
+			document.querySelector('.yz').onclick = function(){
+				var that  = this;
+				if(flag){
+					that.innerText = num+'重新获取';
+					time = setInterval(function(){
+						if(num==0){
+							that.innerText = '获取验证码';
+							clearInterval(time);
+							num = 10;
+							flag = true;
+						}else{
+							num--;
+							that.innerText = num+'重新获取';
+						}
+						
+					},1000)
+					flag = false;
+				}
+				
+			}
+		}
+	</script>
+
+</body>
+</html>
